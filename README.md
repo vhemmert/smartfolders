@@ -1,0 +1,2 @@
+# virtualfolders
+Alfresco Virtual Folders
