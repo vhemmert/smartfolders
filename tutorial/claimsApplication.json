@@ -1,0 +1,567 @@
+{
+	"name" : "Claims Management Example",
+	"nodes" : [{
+			"id":"1",
+			"name" : "Claims by type",
+			"nodes" : [{
+					"id":"11",
+					"name" : "Accident Insurance",
+					"nodes" : [{
+							"id":"111",
+							"name" : "New",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Accident Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'new'"
+							}
+						}, {
+							"id":"112",
+							"name" : "In process",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Accident Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'in process'"
+							}
+						}, {
+							"id":"113",
+							"name" : "Sent for approval",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Accident Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approval'"
+							}
+						}, {
+							"id":"114",
+							"name" : "Payment approved",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Accident Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approved for payment'"
+							}
+						}, {
+							"id":"115",
+							"name" : "Closed",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Accident Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'closed'"
+							}
+						}
+					]
+				}, {
+					"id":"12",
+					"name" : "Health Insurance",
+					"nodes" : [{
+							"id":"121",
+							"name" : "New",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Health Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'new'"
+							}
+						}, {
+							"id":"122",
+							"name" : "In process",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Health Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'in process'"
+							}
+						}, {
+							"id":"123",	
+							"name" : "Sent for approval",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Health Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approval'"
+							}
+						}, {
+							"id":"124",
+							"name" : "Payment approved",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Health Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approved for payment'"
+							}
+						}, {
+							"id":"125",
+							"name" : "Closed",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Health Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'closed'"
+							}
+						}
+					]
+				}, {
+					"id":"13",
+					"name" : "Home Insurance",
+					"nodes" : [{
+							"id":"131",
+							"name" : "New",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Home Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'new'"
+							}
+						}, {
+							"id":"132",
+							"name" : "In process",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Home Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'in process'"
+							}
+						}, {
+							"id":"133",
+							"name" : "Sent for approval",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Home Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approval'"
+							}
+						}, {
+							"id":"134",
+							"name" : "Payment approved",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Home Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approved for payment'"
+							}
+						}, {
+							"id":"135",
+							"name" : "Closed",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Home Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'closed'"
+							}
+						}
+					]
+				}, {
+					"id":"14",
+					"name" : "Life Insurance",
+					"nodes" : [{
+							"id":"141",
+							"name" : "New",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Life Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'new'"
+							}
+						}, {
+							"id":"142",
+							"name" : "In process",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Life Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'in process'"
+							}
+						}, {
+							"id":"143",
+							"name" : "Sent for approval",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Life Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approval'"
+							}
+						}, {
+							"id":"144",
+							"name" : "Payment approved",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Life Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approved for payment'"
+							}
+						}, {
+							"id":"145",
+							"name" : "Closed",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Life Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'closed'"
+							}
+						}
+					]
+				}, {
+					"id":"15",
+					"name" : "Motor Insurance",
+					"nodes" : [{
+							"id":"151",
+							"name" : "New",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Motor Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'new'"
+							}
+						}, {
+							"id":"152",
+							"name" : "In process",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Motor Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'in process'"
+							}
+						}, {
+							"id":"153",
+							"name" : "Sent for approval",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Motor Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approval'"
+							}
+						}, {
+							"id":"154",
+							"name" : "Payment approved",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Motor Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approved for payment'"
+							}
+						}, {
+							"id":"155",
+							"name" : "Closed",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Motor Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'closed'"
+							}
+						}
+					]
+				}, {
+					"id":"16",
+					"name" : "Travel Insurance",
+					"nodes" : [{
+							"id":"161",
+							"name" : "New",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Travel Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'new'"
+							}
+						}, {
+							"id":"162",
+							"name" : "In process",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Travel Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'in process'"
+							}
+						}, {
+							"id":"163",
+							"name" : "Sent for approval",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Travel Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approval'"
+							}
+						}, {
+							"id":"164",
+							"name" : "Payment approved",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Travel Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approved for payment'"
+							}
+						}, {
+							"id":"165",
+							"name" : "Closed",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:claimType:'Travel Insurance' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'closed'"
+							}
+						}
+					]
+				}
+
+			]
+		}, {
+			"id":"2",
+			"name" : "My open claims",
+			"description" : "Opem claims for which I am the responsible administrator, filtered by status",
+			"nodes" : [{
+					"id":"21",
+					"name" : "All my open claims",
+					"search" : {
+						"language" : "fts-alfresco",
+						"query" : "=clex:claimAdmin:'%CURRENT_USER%' and +ASPECT:'clex:claimFolder' and NOT =clex:claimStatus:'closed'"
+					}
+				}, {
+					"id":"22",
+					"name" : "New",
+					"search" : {
+						"language" : "fts-alfresco",
+						"query" : "=clex:claimAdmin:'%CURRENT_USER%' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'new'"
+					}
+				}, {
+					"id":"23",
+					"name" : "In process",
+					"search" : {
+						"language" : "fts-alfresco",
+						"query" : "=clex:claimAdmin:'%CURRENT_USER%' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'in process'"
+					}
+				}, {
+					"id":"24",
+					"name" : "Sent for approval",
+					"search" : {
+						"language" : "fts-alfresco",
+						"query" : "=clex:claimAdmin:'%CURRENT_USER%' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approval'"
+					}
+				}, {
+					"id":"25",
+					"name" : "Payment approved",
+					"search" : {
+						"language" : "fts-alfresco",
+						"query" : "=clex:claimAdmin:'%CURRENT_USER%' and +ASPECT:'clex:claimFolder' and =clex:claimStatus:'approved for payment'"
+					}
+				}
+			]
+		}, {
+			"id":"3",
+			"name" : "Policy Documents",
+			"nodes" : [{
+					"id":"31",
+					"name" : "Accident Insurance",
+					"nodes" : [{
+							"id":"311",
+							"name" : "Insurance Contracts",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Accident Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Contract'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Contract",
+									"clex:insuranceClass" : "Accident Insurance"
+								}
+							}
+						}, {
+							"id":"312",
+							"name" : "Terms & Conditions",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Accident Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Terms'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Terms",
+									"clex:insuranceClass" : "Accident Insurance"
+								}
+							}
+						}
+					]
+				},{
+					"id":"32",
+					"name" : "Health Insurance",
+					"nodes" : [{
+							"id":"321",
+							"name" : "Insurance Contracts",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Health Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Contract'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Contract",
+									"clex:insuranceClass" : "Health Insurance"
+								}
+							}
+						}, {
+							"id":"322",
+							"name" : "Terms & Conditions",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Health Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Terms'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Terms",
+									"clex:insuranceClass" : "Health Insurance"
+								}
+							}
+						}
+					]
+				},{
+					"id":"33",
+					"name" : "Home Insurance",
+					"nodes" : [{
+							"id":"331",
+							"name" : "Insurance Contracts",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Home Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Contract'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Contract",
+									"clex:insuranceClass" : "Home Insurance"
+								}
+							}
+						}, {
+							"id":"332",
+							"name" : "Terms & Conditions",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Home Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Terms'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Terms",
+									"clex:insuranceClass" : "Home Insurance"
+								}
+							}
+						}
+					]
+				},{
+					"id":"34",
+					"name" : "Life Insurance",
+					"nodes" : [{
+							"id":"341",
+							"name" : "Insurance Contracts",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Life Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Contract'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Contract",
+									"clex:insuranceClass" : "Life Insurance"
+								}
+							}
+						}, {
+							"id":"342",
+							"name" : "Terms & Conditions",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Life Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Terms'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Terms",
+									"clex:insuranceClass" : "Life Insurance"
+								}
+							}
+						}
+					]
+				},{
+					"id":"35",
+					"name" : "Motor Insurance",
+					"nodes" : [{
+							"id":"351",
+							"name" : "Insurance Contracts",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Motor Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Contract'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Contract",
+									"clex:insuranceClass" : "Motor Insurance"
+								}
+							}
+						}, {
+							"id":"352",
+							"name" : "Terms & Conditions",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Motor Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Terms'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Terms",
+									"clex:insuranceClass" : "Motor Insurance"
+								}
+							}
+						}
+					]
+				},{
+					"id":"36",
+					"name" : "Travel Insurance",
+					"nodes" : [{
+							"id":"361",
+							"name" : "Insurance Contracts",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Travel Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Contract'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Contract",
+									"clex:insuranceClass" : "Travel Insurance"
+								}
+							}
+						}, {
+							"id":"362",
+							"name" : "Terms & Conditions",
+							"search" : {
+								"language" : "fts-alfresco",
+								"query" : "=clex:insuranceClass:'Travel Insurance' and +TYPE:'clex:policyDoc' and =clex:policyDocType:'Insurance Terms'"
+							},
+							"filing" : {
+								"path" : "%ACTUAL_PATH%/cm:Policies",
+								"classification" : {
+									"type" : "clex:policyDoc",
+									"aspects" : [
+										"clex:commonData"
+									]
+								},
+								"properties" : {
+									"clex:policyDocType" : "Insurance Terms",
+									"clex:insuranceClass" : "Travel Insurance"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
