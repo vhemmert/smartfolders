@@ -170,6 +170,14 @@
 						"language" : "fts-alfresco",
 						"query" : "+TYPE:'cm:content' AND (=cm:creator:%CURRENT_USER% OR =cm:modifier:%CURRENT_USER%) AND TAG:'confidential'"
 					}
+				}, {
+					"id" : "17",
+					"name" : "Category 'Software Document'",
+					"description" : "My documents in category or a sub category of 'Software Document Classification' - no upload",
+					"search" : {
+						"language" : "fts-alfresco",
+						"query" : "+TYPE:'cm:content' AND (=cm:creator:%CURRENT_USER% OR =cm:modifier:%CURRENT_USER%) AND PATH:'/cm:generalclassifiable//cm:Software_x0020_Document_x0020_Classification//member'"
+					}
 				}
 			]
 		}
