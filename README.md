@@ -1,2 +1,2 @@
 # virtualfolders
-Alfresco Virtual Folders
+Alfresco Smart Folders
